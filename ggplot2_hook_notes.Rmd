@@ -44,3 +44,11 @@ ggplot(data=penguins, aes(x =flipper_length_mm, y=body_mass_g))+
   facet_wrap(~sex)
 ```
 
+fruits<- c("Orange", "Pineapple", "Mango", "Papaya", "Strawberry")
+
+scores<- c(3, 5, 1, 5, 2)
+
+fruit_ranks<- data.frame(fruits, scores)
+
+ggplot(data = fruit_ranks) + geom_point(mapping=aes(x= scores, y= fruits))
+
